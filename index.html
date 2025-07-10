@@ -20,6 +20,8 @@
   
   <body>
 
+    <div id="preBodyDiv"></div>
+
     <div id="bodyDiv">
     
       <div id="headerDiv">To: Foster's Exotic Pets</div>
@@ -57,6 +59,8 @@
       
       document.addEventListener("DOMContentLoaded", function() {
 
+        const preBodyDiv = document.getElementById("preBodyDiv");
+
         atOptions = {
           'key' : '455d9e651e329ed73a1f10e5e004a325',
           'format' : 'iframe',
@@ -67,7 +71,7 @@
         
         var ad1 = document.createElement("script");
         ad1.src = "//www.highperformanceformat.com/455d9e651e329ed73a1f10e5e004a325/invoke.js";
-        document.body.appendChild(ad1);
+        preBodyDiv.appendChild(ad1);
     
         var adDiv = document.createElement("div");
         adDiv.id = "container-2bd80b99d8f8a08b82f2a457a06baa53";
